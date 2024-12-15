@@ -6,8 +6,22 @@
   layer-type: 'line'
   url: 'https://data.cityofnewyork.us/resource/mzxg-pwib.geojson?$limit=10000'
   paint:
-    line-color: '#000000'
-    line-width: 3
+    line-color: '#ffffff'
+    line-width: 2
+    line-dasharray: [1, 2, 1]
+    # line-gap-width: 5
+
+- id: 'truck-routes'
+  label: 'Commercial Trucking Routes'
+  toggle: true  
+  visible: true
+  data-type: 'geojson'
+  layer-type: 'line'
+  url: 'https://data.cityofnewyork.us/resource/jjja-shxy.geojson?$limit=10000'
+  paint:
+    line-color: '#ff0000'
+    line-width: 2
+
 
 - id: 'vector-tile'
   label: 'Vector Tiles'
@@ -42,7 +56,7 @@
 - id: 'pizza'
   label: 'Pizza Places'
   toggle: true
-  visible: true
+  visible: false
   data-type: 'geojson'
   layer-type: 'circle'
   url: 'https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000'
